@@ -1,9 +1,9 @@
-/* custom property */
+/* Custom property */
 :root {
     --global-color-1: #800000;
 }
 
-/* the styles for the elements */
+/* The styles for the elements */
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
@@ -12,7 +12,7 @@ body {
 a:focus, a:hover {
     font-style: italic;
 }
-/* the styles for the header */
+/* The styles for the header */
 header h2 {
     font-size: 175%;
     color: var(--global-color-1);
@@ -29,7 +29,7 @@ header img {
 .shadow {
     text-shadow: 2px 2px 2px var(--global-color-1);
 }
-/* the styles for the main content */
+/* The styles for the main content */
 main {
     clear: left;
 }
@@ -62,7 +62,18 @@ main ul {
 main li {
     padding-bottom: .35em;
 }
-/* the styles for the navigation menu */
+
+/* The styles for the footer */
+footer p {
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* The styles for the navigation menu */
+#nav-menu {
+    position: relative;
+}
+
 #nav-menu ul {
     list-style: none;
     margin: 0;
@@ -71,12 +82,13 @@ main li {
 
 #nav-menu li {
     float: left;
-    margin-right: 10px; /* Add margin between list items if needed */
+    margin-right: 10px;
+    position: relative;
 }
 
 #nav-menu li a {
     display: block;
-    width: calc(20% - 10px); /* 1/5th of the width of the body element with margin */
+    width: calc(20% - 10px);
     text-align: center;
     padding: 1em 0;
     text-decoration: none;
@@ -86,7 +98,7 @@ main li {
 }
 
 #nav-menu li a:hover {
-    background-color: #600000; /* Darker shade on hover */
+    background-color: #600000;
 }
 
 /* Style for the "current" class */
@@ -94,8 +106,5 @@ main li {
     color: yellow;
 }
 
-/* the styles for the footer */
-footer p {
-    text-align: center;
-    padding: 1em 0;
-}
+/* Style for the submenu
+
