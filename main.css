@@ -56,14 +56,27 @@ main blockquote {
     padding: 0 2em;
     font-style: italic;
 }
-/* Style rule added for the navigation menu */
+/* Style rule modified for the navigation menu */
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    position: relative; /* Using relative positioning */
 }
 nav ul li {
     float: left;
+    position: relative; /* Add relative positioning for submenu positioning */
+}
+nav ul li ul {
+    display: none; /* Hide submenu by default */
+    position: absolute;
+    top: 100%; /* Position 100% from the top of the main menu */
+}
+nav ul li:hover ul {
+    display: block; /* Display submenu as block element on hover */
+}
+nav ul li ul li {
+    float: none; /* Prevent list items in submenu from floating */
 }
 nav ul li a {
     display: block;
@@ -85,6 +98,12 @@ main li {
     padding-bottom: .35em;
 }
 
+/* Style rule added for the ::after pseudo-element of the navigation menu */
+nav::after {
+    content: '';
+    display: block;
+    clear: both;
+}
 /* the styles for the footer */
 footer p {
     text-align: center;
