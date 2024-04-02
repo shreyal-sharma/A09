@@ -110,61 +110,44 @@ aside img {
 	padding-bottom: 1em;
 }
 /* Additional styles for the navigation menu */
-#nav-menu {
-	position: relative;
-}
 
-#nav-menu ul {
-	list-style: none;
-	padding: 0;
+#nav_menu ul {
+	list-style-type: none;
 	margin: 0;
-}
-
-#nav-menu ul li {
-	float: left;
+	padding: 0;
 	position: relative;
 }
-
-#nav-menu ul li a {
-	display: block;
-	padding: 10px 20px;
-	text-decoration: none;
-	color: white;
-	font-weight: bold;
+#nav_menu ul li {
+	float: left;
 }
-
-#nav-menu ul li a.current {
+#nav_menu ul li a {
+    display: block;
+    width: 160px;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
 	color: yellow;
 }
-
-#nav-menu ul li ul {
-	display: none;
-	position: absolute;
-	top: 100%;
-	left: 0;
-	background-color: #800000;
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
 }
-
-#nav-menu ul li:hover ul {
-	display: block;
-}
-
-#nav-menu ul li ul li {
-	display: block;
+#nav_menu ul ul li {
 	float: none;
 }
-
-#nav-menu ul li ul li a {
-	padding: 10px 20px;
-	text-align: center;
-	color: white;
-	font-weight: bold;
-	text-decoration: none;
-	background-color: #800000;
+#nav_menu ul li:hover > ul {
+	display: block;
 }
-
-#nav-menu ul li ul li a:hover {
-	background-color: #931420;
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
 }
 
 /* the styles for the footer */
